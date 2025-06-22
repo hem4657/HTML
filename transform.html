@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform in html and css</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      img{
+        background-color: yellow;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: red;
+        width:  100%;
+        font-size: 16px;
+        transform: rotate(0deg);
+        transition: width 1s, height 1s;
+        height: 100%;
+      }
+      img:hover{
+        width: 50%;
+        height: 50%;
+        transform: rotate(180deg);
+      }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+    <img src="IMG_20250115_194525_373 (1).webp" alt="">
+    </div>
+</body>
+</html>

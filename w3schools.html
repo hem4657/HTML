@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3schools in html and css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       header{
+        display: flex;
+       }
+       header>.logo>img{
+        width: 100px;
+        
+       }
+       header>.main{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+       }
+       header>.main>.menu-bar{
+           display: flex;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           width: 450px;
+           align-items: center;
+           justify-content: space-evenly;
+           list-style-type: none;
+       }
+       header>.main>.menu-bar a{
+        text-decoration: none;
+        padding:17px 10px;
+        color: black;
+       }
+       header>.main>.menu-bar a:hover{
+        background-color: green;
+        border-radius: 5px;
+        color: white;
+       }
+       header>.main>.menu-bar1{
+        width: 170px;
+       
+        padding: 10px 20px;
+       }
+       header>.main>.menu-bar1 li{
+        border: 0.5px solid rgb(153, 151, 151);
+        padding:6px 20px 6px 20px;
+        list-style-type: none;
+        border-radius: 20px;
+       }
+       header>.main>.half li{
+        padding: 17px 0px;
+        list-style-type: none;
+       }
+       header>.main>.half li a{
+          color: black;
+          padding: 10px 12px;
+          border-radius: 50%;
+       }
+       header>.main>.half li a:hover{
+        background-color: rgb(221, 216, 216);
+       }
+       header>.main>.menu-bar2{
+         display: flex;
+         width: 30%;
+         justify-content: space-evenly;
+         align-items: center;
+         list-style-type: none;
+         margin-right: 40px;
+        
+       }
+       .bi-stars,.bi-mortarboard-fill,.bi-code-slash,.bi-cart3{
+        color: purple;
+       }
+       header>.main>.menu-bar2 a{
+        text-decoration: none;
+        padding:10px 4px;
+        color: black;
+       }
+       header>.main>.menu-bar2 a:hover{
+        background-color: rgb(221, 216, 216);
+        border-radius: 20px;
+        
+       }
+       header>.main>.menu-bar3{
+          display: flex;
+          width: 20%;
+          justify-content: space-evenly;
+          align-items: center;
+          list-style-type: none;
+          text-decoration: none;
+
+       }
+       .sign-up{
+        padding: 10px 0px;
+        background-color: rgb(7, 173, 7);
+        color: white;
+        border-radius: 20px;
+       }
+       .sign-up a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 25px;
+       }
+       .sign-up a:hover{
+        background-color: green;
+        border-radius: 50px;
+
+       }
+       .log-in{
+        padding: 10px 0px;
+        background-color: rgba(100, 97, 97, 0.33);
+        color: black;
+        margin-right: 10px;
+        border-radius: 20px;
+       }
+       .log-in a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 25px;
+       }
+       .log-in a:hover{
+        background-color: green;
+        color: white;
+        border-radius: 50px;
+       }
+       nav{
+        height: 20px;
+        background-color: rgb(93, 90, 90);
+       }
+       nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        
+        color: white;
+        
+       }
+       nav ul li{
+        padding: 0px 0px;
+       }
+       nav ul li a{
+        padding: 0px 40px 3px 45px;
+        color: white;
+        text-decoration: none;
+       }
+       nav ul li a:hover{
+        background-color: black;
+        color: white;
+        text-decoration: none;
+       }
+       section.main{
+        display: flex;
+        height: calc(100vh - 100px);
+        background-image: url(it.group.jpg);
+       }
+       section.main>aside{
+        width: 20%;
+       }
+       section.main>aside h1{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        color: white;
+        font-family:Arial, Helvetica, sans-serif;
+       }
+       section.main>aside{
+          text-align: center;
+          overflow-y: scroll;  
+          background-color: rgba(190, 188, 188, 0.644);
+       }
+       section.main>aside p{
+        padding: 2px;
+        font-size: 17px;
+       }
+       section.main>aside p a{
+        color: black;
+        text-decoration: none;
+       }
+       section.main>aside p a:hover{
+        background-color: rgb(187, 182, 182);
+        padding: 5px 30px;
+       }
+       section.aside-right{
+        width: 80%;
+        overflow-y: scroll;
+       }
+       section.aside-right h1{
+        font-size: 40px;
+        font-family:'Times New Roman', Times, serif;
+        padding-top: 70px;
+        color: white;
+        padding-left: 30px;
+        padding-bottom: 30px;
+       }
+       section.aside-right> .two-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+        padding-bottom: 30px;
+       }
+       section.aside-right> .two-btn> button{
+        padding: 15px 0px;
+        border: none;
+        border-radius: 6px;
+        
+       }
+        section.aside-right>.two-btn> button a{
+             padding:16px 30px;
+            background-color: rgba(6, 176, 6, 0.945);
+            color: white;
+            border-radius: 6px;
+        }
+        section.aside-right> .two-btn> button a:hover{
+             color: white;
+             background-color: green;
+        }
+        section.aside-right> .contaner-box{
+            height: 250px;
+            padding: 50px;
+            background-color: rgba(190, 188, 188, 0.644);
+        }
+         section.aside-right> .contaner-box p{
+            margin-bottom: 20px;
+            color: black;
+            font-size: 20px;
+         }
+         section.aside-right> .contaner-box button{
+              padding: 10px 0px;
+              font-size: 20px;
+              border: none;
+              border-radius: 6px;
+         }
+         section.aside-right> .contaner-box button a{
+            background-color: rgb(6, 163, 6);
+             padding: 11px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+         }
+          section.aside-right> .contaner-box button a:hover{
+            background-color: green;
+          }
+        .aside-right2{
+            padding: 0px 40px;
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+        .contaner-box2{
+            padding: 20px;
+            font-size: 30px;
+            background-color: rgba(190, 188, 188, 0.644);
+          }
+        .code{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="w3.school.png" alt="w3schools website logo">
+        </div>
+        <div class="main">
+            <ul class="menu-bar">
+                <li><a href="#">Tutorials <i class="bi bi-caret-down-fill"></i></a></li>
+                <li><a href="#">Excersise <i class="bi bi-caret-down-fill"></i></a></li>
+                <li><a href="#">Certificates <i class="bi bi-caret-down-fill"></i></a></li>
+                <li><a href="#">Services <i class="bi bi-caret-down-fill"></i></a></li>
+            </ul>
+            <ul class="menu-bar1">
+                <li>search... <i class="bi bi-search"></i></li>
+            </ul>
+          <ul class="half">
+                <li><a href="#"><i class="bi bi-circle-half"></i></a></i></li>
+            </ul>
+            <ul class="menu-bar2">
+                <li><a href="#"><i class="bi bi-stars"></i> Plus</a></li>
+                <li><a href="#"><i class="bi bi-mortarboard-fill"></i> For Teachers</a></li>
+                <li><a href="#"><i class="bi bi-code-slash"></i> Spaces</a></li>
+                <li><a href="#"><i class="bi bi-cart3"></i> Get Certified</a></li>
+            </ul>
+            <ul class="menu-bar3">
+                <li class="sign-up"><a href="#">Sign-up</a></li>
+                <li class="log-in"><a href="#">Log-in</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPIT</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">JAVA</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">HOW TO</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <aside>
+          <h1>CSS Tutorial</h1>
+          <div class="left">
+          <p><a href="#">CSS Introduction</a></p>
+          <p><a href="#">CSS Syntax</a></p>
+          <p><a href="#">CSS Slectors</a></p>
+          <p><a href="#">CSS How To</a></p>
+          <p><a href="#">CSS Comments</a></p>
+          <p><a href="#">CSS Colors</a></p>
+          <p><a href="#">CSS Bacgrounds</a></p>
+          <p><a href="#">CSS Borders</a></p>
+          <p><a href="#">CSS Margins</a></p>
+          <p><a href="#">CSS Paddins</a></p>
+          <p><a href="#">CSS Height/Width</a></p>
+          <p><a href="#">CSS Box Model</a></p>
+          <p><a href="#">CSS Outline</a></p>
+          <p><a href="#">CSS Text</a></p>
+          <p><a href="#">CSS Fonts</a></p>
+          <p><a href="#">CSS Icons</a></p>
+          <p><a href="#">CSS Links</a></p>
+          <p><a href="#">CSS Lists</a></p>
+          <p><a href="#">CSS Tabels</a></p>
+          <p><a href="#">CSS Display</a></p>
+          <p><a href="#">CSS Max-Width</a></p>
+          <p><a href="#">CSS Position</a></p>
+          <p><a href="#">CSS Z-Index</a></p>
+          <p><a href="#">CSS Overflow</a></p>
+          <p><a href="#">CSS Float</a></p>
+          <p><a href="#">CSS Inline-Block</a></p>
+          <p><a href="#">CSS Align</a></p>
+          <p><a href="#">CSS Combinaters</a></p>
+          <p><a href="#">CSS Pseudo-Classes</a></p>
+          <p><a href="#">CSS Pseudo-Elements</a></p>
+          <p><a href="#">CSS Opecity</a></p>
+          <p><a href="#">CSS Navigation-Bar</a></p>
+          <p><a href="#">CSS Dropdown</a></p>
+          <p><a href="#">CSS Image-Gellery</a></p>
+          <p><a href="#">CSS Image-Sprites</a></p>
+          <p><a href="#">CSS Altr-Slectors</a></p>
+          <p><a href="#">CSS Forms</a></p>
+          <p><a href="#">CSS Counters</a></p>
+          <p><a href="#">CSS Website-Layout</a></p>
+          <p><a href="#">CSS Units</a></p>
+          <p><a href="#">CSS Specificity</a></p>
+          <p><a href="#">CSS Important</a></p>
+          <p><a href="#">CSS Math-Functions</a></p>
+          </div>
+        </aside>
+        <section class="aside-right">
+            <h1>CSS Tutorial</h1>
+            <div class="two-btn">
+            <button><a href="#">&lt;Home</a></button>
+            <button><a href="#">Next&gt;</a></button>
+            </div>
+        <div class="contaner-box">
+            <p>CSS is the language we use to style an HTML document.</p>
+            <p>CSS describes how HTML elements should be displayed.</p>
+            <p>This tutorial will teach you CSS from basic to advanced.</p>
+            <button><a href="#">Start Learning CSS Now&gt;></a></button>
+        </div>
+        <h1>Examples in Each Chapter</h1>
+         <div class="aside-right2">
+        <p>This CSS tutorial contains hundreds of CSS examples.</p>
+        <p>With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+         </div>
+         <div class="contaner-box2">
+           
+         </div>
+        </section>
+    </section>
+</body>
+</html>

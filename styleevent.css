@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin-left: 150px;
+}
+
+.container{
+    width: 85%;
+    height: 50%;
+    display: flex;
+}
+.box{
+    height: 100%;
+    width: 70%;
+}
+.box2{
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+.container2{
+    width: 85%;
+    height: 50%;
+    position: relative;
+}
+.box3{
+    border: 2px solid green;
+    height: 500px;
+    background-color: white;
+    margin-left: 80px;
+    width: 85%;
+    position: absolute;
+    top: -250px;
+}
+.logo{
+    display: flex;
+}
+.icon{
+    width: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.id{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.logo>.id>img{
+    width: 30px;
+    border-radius: 50%;
+
+}
+.hk{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.icon2{
+    width: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+}
+.asid{
+    border: 2px solid red;
+    height: 440px;
+    display: flex;
+}
+.divbox1{
+    border: 2px solid green;
+    width: 20%;
+}
+.event{
+    border: 2px solid red;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.news{
+    border: 2px solid red;
+    height: 50px;
+}

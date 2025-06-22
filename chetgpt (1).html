@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Designer Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .resume-container {
+      width: 950px;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-panel {
+      background: #003e4f;
+      color: white;
+      padding: 40px 30px;
+    }
+
+    .left-panel img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+    }
+
+    .profile, .skills, .languages, .contacts {
+      margin-bottom: 30px;
+    }
+
+    .skills ul, .languages ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .skills ul li, .languages ul li {
+      margin-bottom: 8px;
+    }
+
+    .right-panel {
+      padding: 40px;
+    }
+
+    .right-panel h2 {
+      color: #003e4f;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .experience, .achievements, .education, .reference {
+      margin-bottom: 30px;
+    }
+
+    .experience-item, .achievement-item {
+      margin-top: 10px;
+    }
+    .experience-item p, .achievement-item p {
+      margin-left: 20px;
+    }
+    .flex{
+      display: flex;
+      width: 415px;
+    }
+    .name{
+      background-color: #00bcd4;
+      height: 110px;
+      margin: 10px 0px 20px 20px;
+      border-radius: 7px;
+    }
+    h1{
+      height: 40px;
+      margin-left: 10px ;
+      color: black;
+      margin-top: 20px;
+    }
+    .left-panel>.flex>.name>p{
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <div class="left-panel">
+      <div class="flex">
+      <img src="demo 2.jpg" alt="Profile Picture">
+      <div class="name">
+      <h1>Hemant kumawat</h1>
+      <p>Web Designer</p>
+       </div>
+       </div>
+      <div class="profile">
+        <h2 class="section-title">Profile</h2>
+        <p>I started creating websites earlier in high school. I have always been business-oriented, which turned into making websites for businesses.</p>
+      </div>
+      <div class="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>python</li>
+          <li>react</li>
+        </ul>
+      </div>
+      <div class="languages">
+        <h2 class="section-title">Languages</h2>
+        <ul>
+          <li>English (Native)</li>
+          <li>Hindi</li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <p><strong>Address:</strong> B-40 I-Block Kriti Sagar Narayan Vihar Mangyawas Mansarover Jaipur Rajasthan</p>
+        <p><strong>Email:</strong> Kumawathemant7723@gmail.com</p>
+        <p><strong>Phone:</strong> +918302805745</p>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h2>Work Experience</h2>
+      <div class="experience">
+        <div class="experience-item">
+          <h3>Web Designer | COMPANY</h3>
+          <p>2025-Present</p>
+          <p># Collaborated with cross-functional teams to understand project requirements.</p>
+          <p># Designed and developed responsive and visually appealing websites.</p>
+          <p># Utilized industry-standard design tools such as Adobe Creative Suite.</p>
+          <p># Conducted usability testing for optimized user engagement.</p>
+        </div>
+      </div>
+
+      <h2>Key Achievements</h2>
+      <div class="achievements">
+        <div class="achievement-item">
+          <p># Successfully launched 11 websites within project timelines.</p>
+          <p># Implemented responsive design principles, resulting in a 25% increase in mobile engagement.</p>
+          <p># Received positive client feedback for innovative and visually striking designs.</p>
+        </div>
+      </div>
+
+      <h2>Education</h2>
+      <div class="education">
+        <p>Bachelor of Arts,MSBU,deeg</p>
+      </div>
+
+      <h2>Reference</h2>
+      <div class="reference">
+        <p>Available upon request</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

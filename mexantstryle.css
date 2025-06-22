@@ -1,0 +1,570 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(it.grop..jpg);
+}
+.contaner{
+    height: 100vh;
+    overflow-y: scroll;
+    color: white;
+   background-color: rgba(0, 0, 0, 0.389);
+}
+.box{
+    height: 100%;
+}
+.main{
+    display: flex;
+}
+.emg{
+    width: 35%;
+    height: 140px;
+    text-align: center;
+    align-content: center;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    align-items: center;
+    list-style-type: none;
+    width: 75%;
+}
+.home{
+    color: red;
+}
+.contact{
+    padding: 7px 10px;
+    background-color: rgb(0, 255, 72);
+    border-radius: 5px;
+}
+h1{
+    width: 70%;
+    font-size: 70px;
+    text-align: center;
+}
+.hk{
+    width: 58%;
+}
+span{
+    color: orangered;
+}
+.line{
+    border: 2px solid white;
+    width: 60px;
+    margin: 60px 120px;
+    border-radius: 5px;
+}
+.lorem{
+    width: 40%;
+    margin-left: 115px;
+    font-size: 20px;
+    text-align: justify;
+    height: 80px;
+}
+.email{
+    width: 500px;
+    margin-top: 70px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+}
+.contacts{
+    margin-right: 10px;
+    height: 70%;
+    width: 25%;
+    border: none;
+    outline: none;  
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(39, 246, 39);
+}
+.emails{
+    margin-right: 10px;
+    height: 70%;
+    width: 25%;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;    
+    background-color: rgb(254, 83, 21);
+}
+.contaner2{
+    display: flex;
+}
+.photo{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    width: 50%;
+}
+.photo>img{
+    width: 100%;
+    height: 100%;
+}
+.submit{
+    width: 50%;
+}
+.FREEDOM{
+    width: 300px;
+    height: 100px;
+    font-size: 25px;
+    text-align: center;
+    align-content: end;
+}
+h2{
+    width: 450px;
+    font-size: 40px;
+    text-align: center;
+}
+.login{
+    display: flex;
+    height: 20%;
+    font-size: 20px;
+    margin-left: 70px;
+}
+.Your{
+    width: 50%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+input{
+    width: 90%;
+    height: 20%;
+    border: none;
+    outline: none;
+    background-color: rgba(170, 160, 160, 0.457);
+    border-radius: 5px;
+}
+.bar{
+    margin-left: 70px;
+    height: 100px;
+    font-size: 20px;
+}
+.bar>input{
+    width: 95%;
+    height: 35%;
+}
+.bar1{
+    margin-left: 70px;
+    height: 100px;
+    font-size: 20px;
+}
+.bar1>input{
+    width: 95%;
+    height: 35%;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.989);
+    opacity:0.5;
+    padding-left: 10px;
+}
+.btn{
+    width: 36%;
+    text-align: center;
+    height: 5%;
+    margin-top: 50px;
+}
+.now{
+    width: 50%;
+    background-color: orangered;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+.contaner3{
+    height: 100%;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.main-box{
+    width: 90%;
+    display: flex;
+    height: 100%;
+}
+.template{
+    height: 100%;
+    width: 45%;
+}
+.teg{
+    height: 30%;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.342), -2px -2px 9px rgba(0, 0, 0, 0.342);
+    display: flex;
+    width: 100%;
+    margin: 20px 0px 0px 25px;
+}
+.display{
+    height: 100%;
+    width: 100%;
+}
+.hk1{
+    width: 20%;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+}
+.bi-archive-fill{
+    color: green;
+}
+.bi-cloud-fill{
+    color: green;
+}
+.bi-ev-station-fill{
+    color: green;
+}
+.bi-binoculars-fill{
+    color: green;
+}
+.bi-phone-vibrate-fill{
+    color: green;
+}
+.bi-puzzle-fill{
+    color: green;
+}
+.css{
+    height: 50%;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    align-content: center;
+    font-weight: bold;
+}
+.html{
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    align-content: center;
+    font-weight: bold;
+}
+.fast{
+    height: 50%;
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    align-content: center;
+    font-weight: bold;
+}
+.html2{
+    height: 50%;
+    width: 45%;
+    text-align: center;
+    font-size: 25px;
+    align-content: center;
+    font-weight: bold;
+}
+.mobile{
+    height: 50%;
+    width: 57%;
+    text-align: center;
+    font-size: 25px;
+    align-content: center;
+    font-weight: bold;
+}
+.peg{
+    text-align: justify;
+    width: 90%;
+    margin-left: 25px;
+}
+.templates{
+    width: 50%;
+    margin-left: 20px;
+}
+.contaner4{
+    height: 100%;
+    color: black;
+    background-color: white;
+}
+.TEST{
+    height: 10%;
+    text-align: center;
+    align-content: end;
+    color: orangered;
+    font-size: 15px;
+}
+.what{
+    height: 5%;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.david{
+    background-color: white;
+    width: 100%;
+    height: 39rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.david>.box{
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.158), -2px -2px 9px rgba(0, 0, 0, 0.158);
+    width: 80%;
+    display: flex;
+    height: 60%;
+    border-radius: 10px;
+}
+.david>.box>.david1>.icon{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    align-content: center;
+}
+.david1{
+    height: 100%;
+    width: 98%;
+}
+.fa-quote-left{
+    width: 30%;
+    height: 60%;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(10, 215, 10);
+    align-content: center;
+}
+.lorem2{
+    text-align: justify;
+    width: 90%;
+    height: 25%;
+    align-content: center;
+    margin-left: 8%;
+}
+.degb{
+    width: 38%;
+    font-weight: bold;
+    font-size: 25px;
+    height: 10%;
+    text-align: center;
+    align-content: center;
+}
+.ceo{
+    width: 29%;
+    color: rgb(5, 116, 5);
+    font-weight: bold;
+    text-align: center;
+}
+.contaner5{
+    height: 100%;
+    color: black;
+    background-color: white;
+}
+.about{
+    height: 10%;
+    text-align: center;
+    align-content: end;
+    color: orangered;
+    font-weight: bold;
+    font-size: 15px;
+}
+.better{
+    height: 85%;
+    display: flex;
+}
+.better1{
+    width: 60%;
+}
+.but{
+    height: 15%;
+    width: 80%;
+    align-content: center;
+    text-align: center;
+}
+.web{
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.158), -2px -2px 9px rgba(0, 0, 0, 0.158);
+    height: 50%;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0px 20px;
+    width: 20%;
+}
+.project{
+    height: 85%;
+    display: flex;
+}
+.client{
+    width: 50%;
+}
+.title{
+    height: 10%;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+.plan{
+    height: 20%;
+    text-align: center;
+    align-content: center;
+    color: green;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.158), -2px -2px 9px rgba(0, 0, 0, 0.158);
+}
+.bujet{
+    height: 20%;
+    text-align: center;
+    align-content: center;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.158), -2px -2px 9px rgba(0, 0, 0, 0.158);
+}
+.better2{
+    width: 40%;
+}
+.tell{
+    width: 70%;
+    height: 10%;
+    text-align: center;
+    align-content: end;
+    font-weight: bold;
+    font-size: 20px;
+}
+.want{
+    width: 65%;
+    height: 10%;
+    text-align: center;
+    align-content: end;
+    font-weight: bold;
+    font-size: 20px;
+}
+.how{
+    width: 70%;
+    margin: 50px 0px 0px 90px;
+    text-align: justify;
+}
+.discover{
+    width: 60%;
+    height: 15%;
+    text-align: center;
+    align-content: end;
+}
+.discover>button{
+    width: 50%;
+    height: 50%;
+    border: none;
+    background-color: rgb(5, 161, 5);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.contaner6{
+    height: 40%;
+    background-color: white;
+}
+.crypto{
+    height: 50%;
+    margin-top: 5%;
+    display: flex;
+    background-image: url(it.grop..jpg);
+}
+.crypto>.box1{
+    width: 60%;
+    height: 100%;
+}
+.busnes{
+    height: 50%;
+    text-align: center;
+    align-content: end;
+    font-weight: bold;
+    font-size: 30px;
+}
+.busnes1{
+    height: 50%;
+    width: 97%;
+    text-align: center;
+    align-content: start;
+    font-weight: bold;
+    font-size: 30px;
+}
+.busnes>.solve{
+    color: rgb(10, 199, 10);
+}
+.crypto>.box2{
+    width: 40%;
+    height: 100%;
+}
+.invest{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.invest>.bold{
+    width: 20%;
+    height: 25%;
+    margin-left: 10px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.invest>.bold1{
+    width: 20%;
+    height: 25%;
+    margin-left: 15px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.bold>button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgb(3, 163, 3);
+    border: none;
+    border-radius: 5px;
+}
+.bold1>button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+}
+.contaner7{
+    height: 40%;
+    background-color: white;
+    color: black;
+}
+.contaner7>.box1{
+    height: 50%;
+    display: flex;
+    background-image: url(it.grop..jpg);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.158), -2px -2px 9px rgba(0, 0, 0, 0.158);
+}
+.contaner7>.box1>.imag{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+.contaner7>.box1>.imag>img{
+    width: 10%;
+    height: 50%;
+    margin-left: 50px;
+}
+.contaner7>.box2{
+    height: 50%;
+}
+.ltd{
+    height: 50%;
+    text-align: center;
+    align-content: end;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ltd1{
+    height: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+

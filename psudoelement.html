@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo element in html</title>
+    <style>
+         .container{
+            border: 2px solid red;
+            width: 500px;
+            height: 400px;
+            background-color: rgba(128, 0, 128, 0.167);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+        .container:hover{
+            background-color: rgba(128, 0, 128, 0.457);
+        }
+        p::first-line{
+            color: red;
+            font-variant: small-caps;
+        }
+        p::first-letter{
+            color: yellow;
+            font-size: large;
+        }
+        ul{
+           font-size: 20px;
+        }
+        ::marker{
+            color: red;
+        }
+        ::selection{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda veritatis quos doloribus, eos, deleniti culpa necessitatibus repellat molestias ea magni nostrum sit! Veniam dignissimos id consequuntur error commodi corrupti quos beatae dolorem? Suscipit id nam modi vero. Quaerat vel inventore rerum expedita aliquid exercitationem porro maxime eaque earum laudantium. Odio.</p>
+      </div>
+      <h1>Hemant Kumawat</h1>
+      <h1>Hemant Kumawat</h1>
+      <h1>Hemant Kumawat</h1>
+      <h1>Hemant Kumawat</h1>
+      <h1>Hemant Kumawat</h1>
+      <ul>
+        <li>red</li>
+        <li>yellow</li>
+        <li>blue</li>
+        <li>black</li>
+        <li>white</li>
+      </ul>
+</body>
+</html>

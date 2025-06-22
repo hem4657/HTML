@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio-video in html and css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 20px;
+        }
+        body{
+            height: 100vh;
+        }
+        .container1{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       button{
+        width: 200px;
+        height: 100px;
+        background-image: linear-gradient(120deg, yellow, green, red, blue, purple);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        outline: none;
+       }
+        .container{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            height: 100%;
+            width: 50%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <video src="Dhanda Nyoliwala - La La La (Music Video) ｜ Deepesh Goyal ｜ VYRL Haryanvi.mp4" width="100%" height="100%" controls></video>
+            <audio src="audio.song.mp3" controls></audio>
+        </div>
+     </div>
+     <div class="container1">
+       <button>button</button>
+     </div>
+</body>
+</html>

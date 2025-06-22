@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>left menu in css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .bi-list,.bi-x{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .bi-list{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .bi-x{
+            display: none;
+            position: absolute;
+        }
+        .container{
+            border: 2px solid red;
+            height: 680px;
+            width: 300px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            overflow-y: scroll;
+            transform: translateX(-100%);
+            transition: transform 400ms ease-in-out;
+        }
+        #check:checked ~ .container{
+            transform: translateX(0);
+        }
+        #check{
+            visibility: hidden;
+        }
+        #check:checked ~ label[for="check"] > .bi-list{
+            display: none;
+        }
+        #check:checked ~ label[for="check"] > .bi-x{
+            display: block;
+            top: 20px;
+            left: 250px;
+            width: fit-content;
+            z-index: 1;
+        }
+        ul{
+           height: 40%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
+
+        }
+        li{
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+        .home{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .bi-house-door-fill, .bi-list-ul, .bi-gear-fill, .bi-person-lines-fill, .bi-cart-check, .bi-microsoft{
+            color: blue;
+            font-size: 20px;
+            margin: 10px 10px 10px 0px;
+        }
+        p{
+            text-align: justify;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x"></i>
+    </label>
+    <div class="container">
+        <ul>
+            <div class="home">
+                <i class="bi bi-house-door-fill"></i>
+                <li>Home</li>
+            </div>
+            <div class="home">
+                <i class="bi bi-list-ul"></i>
+                <li>Menu</li>
+            </div>
+            <div class="home">
+                <i class="bi bi-gear-fill"></i>
+                <li>Service</li>
+            </div>
+            <div class="home"> 
+                <i class="bi bi-person-lines-fill"></i>
+                <li>Contact</li>
+            </div>
+            <div class="home">
+                <i class="bi bi-cart-check"></i>
+                <li>Pawerd By</li>
+            </div>
+            <div class="home">
+                <i class="bi bi-microsoft"></i>
+                <li>Brands</li>
+            </div>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nostrum eligendi dolorum, facere delectus temporibus molestiae aut, dicta atque necessitatibus laborum alias. Nihil deserunt reiciendis laboriosam nisi quaerat, facilis itaque illo sit officiis corporis debitis, iste vel. Fugit earum alias obcaecati modi, consequuntur sunt harum nemo ut blanditiis minima possimus aliquid assumenda sit facilis praesentium nisi ad, nesciunt quis impedit laudantium? Minima atque commodi tenetur doloribus quos earum quae enim mollitia iusto modi ratione, totam ducimus ex tempore voluptates incidunt cumque? Aut tenetur natus quo magni porro dolore aliquid reprehenderit repudiandae, culpa sapiente delectus laborum alias vel veritatis excepturi perspiciatis suscipit possimus voluptate. Porro saepe minus quo, quibusdam molestiae architecto minima in quia dolore provident placeat, nostrum inventore itaque debitis veniam officia perferendis ratione vero est consequatur veritatis vitae fuga suscipit odio! Expedita beatae ab illum voluptatum at quia iure ullam consequuntur enim accusantium? Amet possimus alias asperiores eum ex. Repellat ducimus id delectus incidunt dicta illum aliquid, voluptatem tempore recusandae quaerat libero voluptas architecto similique asperiores exercitationem non voluptatibus possimus doloremque nemo tenetur dolorum numquam ullam nostrum! Praesentium minima dolores fuga accusantium inventore nam, consequuntur voluptate animi vel, iusto ex? Cumque dolorem voluptate dicta, est vero dolor nemo aliquid vitae obcaecati distinctio molestias adipisci officia quod? Sunt hic quisquam voluptate, a rerum nulla cupiditate et sapiente ipsa quaerat nesciunt consequuntur aut! Ducimus, tenetur. Quibusdam recusandae minus iste deserunt, aliquid vel dolor maiores, dicta totam autem maxime odio vitae eveniet rerum dolore. Numquam, officia delectus! Vitae eaque provident quaerat rerum!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation in html and css</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        @keyframes hemant{
+           0%{background-color: green; left: 0; top: 0px;}
+           25%{background-color: yellow; left: 92%; top: 0;}
+           50%{background-color: red; left: 92%; top: 85vh;}
+           75%{background-color: blue; left: 0; top: 85vh;}
+           100%{background-color: black; left: 0; top: 0;}
+        }
+        img{
+            border: 2px solid red;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            background-color: green;
+            animation-name: hemant;
+            transform: rotate(0deg);
+            animation-duration: 4s;
+            
+            animation-iteration-count: infinite;
+            
+            
+        }
+        img{
+            transform: rotate(180deg);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="IMG_20250115_194525_373 (1).webp" alt="">
+    </div>
+</body>
+</html>

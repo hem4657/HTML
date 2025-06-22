@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesudo classes and element in html and css</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            width: 500px;
+            height: 400px;
+            background-color: rgba(128, 0, 128, 0.167);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .container:hover{
+            background-color: rgba(128, 0, 128, 0.457);
+        }
+        p:first-child{
+            color: red;
+        }
+        p:last-child{
+            color: green;
+        }
+        :nth-child(4){
+           color: yellow;
+        }
+        a{
+            border: 2px solid red;
+            padding: 10px 20px;
+            background-color: skyblue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:link{
+            color: white;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ea!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ea!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ea!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ea!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ea!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ea!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ea!</p>
+    </div>
+    <a href="#"> Glogle</a>
+</body>
+</html>

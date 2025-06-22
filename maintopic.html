@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main topic in html</title>
+    <style>
+        :root{
+            --hemant:red;
+            --kumawat: green;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border: 2px solid red;
+            height: 100vh;
+        }
+        h1{
+            border: 2px solid red;
+            color: var(--hemant);
+            height: 5rem;
+            text-align: center;
+            align-content: center;
+        }
+        a{
+            justify-content: center;
+            border: 2px solid red;
+            display: none;
+            background-color: var(--kumawat);
+        }
+        a:link{
+            color: var(--kumawat);
+        }
+        a:visited{
+            color: var(--kumawat);
+        }
+        a:hover{
+            color: var(--kumawat);
+        }
+        a:active{
+            color: blue;
+        }
+        h1:hover~a{
+            color: var(--hemant);
+            display: block;
+        }
+        p i:first-child{
+            color: var(--hemant);
+        }
+        p::first-line{
+            color: var(--kumawat);
+        }
+        p::first-letter{
+            color: var(--hemant);
+            font-size: large;
+        }
+        ::marker{
+            color: var(--kumawat);
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hemant kumawat</h1>
+    <a href="#"> hemant kumawat</a>
+    <p>Lorem <i>ipsum</i> dolor <i>sit amet.</i></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam laborum recusandae sed reprehenderit animi alias cupiditate vel tempora facilis modi doloribus, sint voluptas similique. At ipsa architecto est necessitatibus! Odit quam odio nulla culpa molestias sint quaerat dolorum quasi pariatur debitis dicta, explicabo deserunt iure officia, dignissimos quisquam ratione suscipit.</p>
+</body>
+</html>

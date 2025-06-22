@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            border: 2px solid red;
+            height: 80px;
+            display: flex;
+        }
+        h1{
+            border: 2px solid red;
+            width: 160px;
+            height: 100%;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px 20px 20px;
+        }
+        h1:hover{
+            background-color: green;
+            color: white;
+        }
+        .tutorials{
+            width: 100%;
+            height: 600px;
+            background-color: green;
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            display: none;
+        }
+        .bi-caret-down-fill{
+            position: absolute;
+            top: 30px;
+            left: 120px;
+            font-size: 25px;
+        }
+        input{
+            display: none;
+        }
+        .bi-x{
+            position: absolute;
+            top: 90px;
+            right: 30px;
+            font-size: 30px;
+            z-index: 1;
+            display: none;
+            color: white;
+        }
+        .bi-x:hover{
+            background-color: white;
+            color: black;
+        }
+        #tutorial:checked ~ .tutorials{
+            display: block;
+        }
+        #tutorial:checked ~ label[for="tutorial"] .bi-x{
+            display: block;
+        }
+        .menu{
+            border: 2px solid red;
+            display: flex;
+        }
+       .fa-caret-down{
+            position: absolute;
+            top: 30px;
+            left: 20px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>tutorials</h1>
+        <input type="checkbox" id="tutorial">
+        <label for="tutorial">
+            <i class="bi bi-caret-down-fill"></i>
+            <i class="bi bi-x"></i>
+        </label>
+        <div class="tutorials">
+
+        </div>
+        <div class="menu">
+        <h1>Excersise</h1>
+        <input type="checkbox" id="tutorial">
+        <label for="tutorial">
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="bi bi-x"></i>
+        </label>
+        <div class="tutorials">
+
+        </div>
+        </div>
+        <h1>Certificates</h1>
+        <input type="checkbox" id="tutorial">
+        <label for="tutorial">
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="bi bi-x"></i>
+        </label>
+        <div class="tutorials">
+
+        </div>
+        <h1>Services</h1>
+        <input type="checkbox" id="tutorial">
+        <label for="tutorial">
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="bi bi-x"></i>
+        </label>
+        <div class="tutorials">
+
+        </div>
+        </div>
+    </header>
+</body>
+</html>

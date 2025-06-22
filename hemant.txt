@@ -1,0 +1,15 @@
+1 Merge tw
+2 remove duplicates from an array
+3 count the frequncy of an element in an array
+4 two sum
+5 find the minimum or meximum element 
+6 remove duplicate  shorted array
+7 count prime
+8 contains duplicates
+9 third largest number
+10 count odd even
+11 rotate an array
+12 find three numbers with the meximum product
+13 minimum number of swape to sort an array
+14 find the smallest positive number missing from an unsorted array
+15 median of two sorted arrays

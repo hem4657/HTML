@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alaina wick in html and css</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgba(122, 19, 219, 0.671);
+        }
+        .box{
+            box-shadow: 2px 2px 9px black, -2px -2px 9px rgba(255, 255, 255, 0.831);
+            width: 400px;
+            height: 600px;
+            border-radius: 20px;
+        }
+        .box>.blank{
+            height: 35%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            background-color: rgba(114, 7, 214, 0.856);
+        }
+        .box>.botom{
+            height: 65%;
+            background-color: white;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            position: relative;
+        }
+        img{
+            width: 30%;
+            border: 5px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: -60px;
+            left: 130px;
+        }
+        .box>.botom>.hemant{
+            display: flex;
+            align-items: end;
+            font-weight: bold;
+            font-size: 20px;
+            justify-content: center;
+            height: 30%;
+        }
+        .box>.botom>.front{
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            align-items: center;
+        }
+        .box>.botom>.lorem{
+            width: 75%;
+            margin-top: 20px;
+            margin-left: 45px;
+            text-align: justify;
+        }
+        .box>.botom>.View{
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            height: 40%;
+            width: 40%;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(79, 3, 150, 0.836);
+            border: none;
+            font-size: 15px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="blank"></p>
+        <div class="botom">
+            <img src="demo 2.jpg" alt="">
+        <p class="hemant">Hemant kumawat</p>
+         <p class="front">Front-end Doveloper</p>
+         <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime laborum expedita, praesentium ab nihil nulla repellat harum impedit quae animi.</p>
+         <div class="View">
+         <button>View Profile</button>
+         </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

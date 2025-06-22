@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table in html</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .hk{
+        background-color:#fae43f;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .bk{
+        color: white;
+        text-align: center;
+        background-color: blue;
+
+    }
+    td{
+        background-color: #e1fe78;
+        font-weight: bold;
+        width: 130px;
+    }
+    .ds{
+         background-color: #e1fe78;
+    }
+    .sp{
+        background-color: white;
+    }
+    .jk{
+        background-color:brown;
+        color: white;
+    }
+    .kj{
+        background-color: brown;
+        text-align: center;
+        font-weight: bold;
+        width: 130px;
+        color: white;
+    }
+    .kl{
+        background-color: white;
+        color: white;
+    }
+    .hiddn{
+        border: none;
+        visibility: hidden;
+    }
+    .ap{
+        background-color: blue;
+        text-align: center;
+        color: white;
+    }
+    .rk{
+        background-color: white;
+        color: white;
+    }
+    .td{
+        text-align: center;
+    }
+    .dt{
+        background-color: white;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <thead>
+    <table border="1">
+        <tr class="hk">
+            <th>a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+            <th>e</th>
+            <th>f</th>
+            <th>g</th>
+            <th>h</th>
+            <th>i</th>
+            <th>j</th>
+            <th>k</th>
+        </tr>
+        <tr class="bk">
+            <th colspan="11">Stoplight Project</th>
+        </tr>
+    <br>
+        <tbody>
+        <tr>
+            <td>project</td>
+            <td colspan="5"></td>
+            <td>project #</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td>project meneger</td>
+            <td colspan="5"></td>
+            <td>sponsor</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td>project artifacts</td>
+            <td colspan="5"></td>
+            <td>updated</td>
+            <td colspan="4"></td>
+        </tr>
+        </tbody>
+    </thead>
+    <br>
+    <thead>
+    <table border="1">
+            <tr class="ds">
+                <th colspan="11">Deliverabies</th>
+            </tr>
+            <tbody>
+            <tr class="ds">
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+            <br>
+            <tr>
+                <td>Schedule</td>
+                <td style="background-color: green;"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+            </tr>
+            <tr>
+                <td>Scope</td>
+                <td style="background-color: yellow;"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+            </tr>
+            <tr>
+                <td>Cost</td>
+                <td style="background-color: red;"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+            </tr>
+            <tr>
+                <td>Risk</td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+            </tr>
+            <tr>
+                <td>Issues</td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+            </tr>
+            <tr>
+                <td>Planned completion</td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+            </tr>
+            <tr>
+                <td>ESL completion</td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+                <td class="sp"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</thead>
+<br>
+    <thead>
+                <table border="1">
+                    <tr class="hk">
+                        <th class="hiddn">a</th>
+                        <th class="hiddn">b</th>
+                        <th class="hiddn">c</th>
+                        <th class="hiddn">d</th>
+                        <th class="hiddn">e</th>
+                        <th class="hiddn">f</th>
+                        <th class="hiddn">g</th>
+                        <th class="hiddn">h</th>
+                        <th class="hiddn">i</th>
+                        <th class="hiddn">j</th>
+                        <th class="hiddn">k</th>
+                    </tr>
+                <tr class="jk">
+                    <th colspan="11">Manegment Alert</th>
+                </tr>
+                <tbody>
+                <tr>
+                    <td colspan='1' class="kj">ID</td>
+                    <td colspan="4" class="kj">Situation Requiring Manegment Attention</td>
+                    <td colspan="4"class="kj">Action Plan</td>
+                    <td colspan="2"class="kj">Owner</td>
+                </tr>
+                <tr>
+                    <td colspan="1" class="kl">1</td>
+                    <td colspan="4" class="kl">1</td>
+                    <td colspan="4" class="kl">1</td>
+                    <td colspan="2" class="kl">1</td>
+                </tr>
+                <tr>
+                    <td colspan="1" class="kl">1</td>
+                    <td colspan="4" class="kl">1</td>
+                    <td colspan="4" class="kl">1</td>
+                    <td colspan="2" class="kl">1</td>
+                </tr>
+                <tr>
+                    <td colspan="1" class="kl">1</td>
+                    <td colspan="4" class="kl">1</td>
+                    <td colspan="4" class="kl">1</td>
+                    <td colspan="2" class="kl">1</td>
+                </tr>
+            </tbody>
+        </table>
+    </thead>
+    <br>
+    <thead>
+    <table border="1">
+        <tr class="hk">
+                <th class="hiddn">a</th>
+                <th class="hiddn">b</th>
+                <th class="hiddn">c</th>
+                <th class="hiddn">d</th>
+                <th class="hiddn">e</th>
+                <th class="hiddn">f</th>
+                <th class="hiddn">g</th>
+                <th class="hiddn">h</th>
+                <th class="hiddn">i</th>
+                <th class="hiddn">j</th>
+                <th class="hiddn">k</th>
+            </tr>
+            <tr class="ap">
+            <th colspan="11">Accomplishments Durling Reporting Period</th>
+        </tr>
+            <tbody>
+                 <tr>
+                    <td colspan="1" class="ap">ID</td>
+                    <td colspan="3" class="ap">Description of Accomplishments</td>
+                    <td colspan="1" class="ap">Planned Completion</td>
+                    <td colspan="1" class="ap">Data Comleted</td>
+                    <td colspan="2" class="ap">Owner</td>
+                    <td colspan="3" class="ap">Comments</td>
+                 </tr>
+                 <tr>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="3" class="rk">1</td>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="2" class="rk">1</td>
+                    <td colspan="3" class="rk">1</td>
+                 </tr>
+                 <tr>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="3" class="rk">1</td>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="2" class="rk">1</td>
+                    <td colspan="3" class="rk">1</td>
+                 </tr>
+                 <tr>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="3" class="rk">1</td>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="1" class="rk">1</td>
+                    <td colspan="2" class="rk">1</td>
+                    <td colspan="3" class="rk">1</td>
+                 </tr>
+            </tbody>
+     </thead>
+    </table>
+    <br>
+    <thead>
+        <table border="1">
+            <tr class="hk">
+                <th class="hiddn">a</th>
+                <th class="hiddn">b</th>
+                <th class="hiddn">c</th>
+                <th class="hiddn">d</th>
+                <th class="hiddn">e</th>
+                <th class="hiddn">f</th>
+                <th class="hiddn">g</th>
+                <th class="hiddn">h</th>
+                <th class="hiddn">i</th>
+                <th class="hiddn">j</th>
+                <th class="hiddn">k</th>
+            </tr>
+            <tbody>
+                 </tr>
+                    <td colspan="1" class="td">Deliverables</td>
+                    <td colspan="4" class="td">Title Description</td>
+                    <td colspan="1" class="td"></td>
+                    <td colspan="5" class="td">Title Description</td>
+                 </tr>
+                 <tr>
+                    <td colspan="1" class="td">1</td>
+                    <td colspan="4" class="dt">1</td>
+                    <td colspan="1" class="td">6</td>
+                    <td colspan="5" class="dt">1</td>
+                 </tr>
+            </tbody>
+        </table>
+    </thead>
+</body>
+</html>
+      

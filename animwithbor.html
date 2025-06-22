@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation with border</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            overflow: hidden;
+            border: 2px solid red;
+        }
+        .box{
+            background-color: black;
+            border-radius: 6px;
+            color: white;
+            width: 300px;
+            text-align: justify;
+            padding: 10px;
+            position: relative;
+        }
+        .box::after{
+            content:"";
+            height: 100%;
+            width: 100%;
+            background: conic-gradient(red, yellow, green, blue, purple, pink, red);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            padding: 10px;
+            border-radius: 5px;
+            animation-name: hemant;
+            animation-duration: 2s;
+
+            
+        }
+        @keyframes hemant {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet fugiat inventore fuga accusamus maxime odio quo eligendi nulla totam? Omnis, reprehenderit necessitatibus? Dolore tempore ullam officia itaque perferendis esse ipsum quia, nemo beatae nulla neque sint doloribus sunt quaerat consectetur vero eveniet suscipit odit, voluptatibus magni laudantium laborum similique!</p>
+        </div>
+    </div>
+</body>
+</html>

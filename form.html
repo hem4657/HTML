@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in html and css</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 15px black;
+            width: 90%;
+            height: 97vh;
+        }
+        body{
+            display: flex;
+            background-color: white;
+            height: 100vh;
+        }
+        form{
+          background-color: white;
+          width: 50%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+        }
+        h3{
+            text-align: center;
+            font-size: 50px;
+        }
+        .logo{
+            display: flex;
+            font-size: 30px;
+            padding: 35px 0px ;
+            width: 300px;
+            justify-content: center;
+            
+        }
+        .ins{
+            margin-left: 15px;
+        }
+        p{
+            text-align: center;
+        }
+       .d-flex{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+        width: 100%;
+
+       }
+       input{
+        width: 60%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: rgba(218, 213, 213, 0.5);
+        padding: 0px 15px;
+       }
+       .fp{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 250px;
+        padding-left: 20px;
+       }
+       .LOG{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 250px;
+        padding-left: 20px;
+       }
+       button{
+        padding: 10px 50px;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        background-color: rgba(255, 0, 0, 0.803);
+       }
+       .color{
+        width: 50%;
+        height: 97vh;
+        color: white;
+        background-color: red;
+       }
+     .pd{
+        padding: 10px 20px;
+        
+     }
+     h2{
+        font-size: 60px;
+        padding-top: 150px;
+        width: 100%;
+        text-align: center;
+     }
+    </style>
+</head>
+<body>
+    <div class="box1">
+    <form>
+    <h3>Log-In</h3>
+    <div class="logo">
+         <i class="bi bi-facebook"></i>
+         <div class="ins">
+         <i class="bi bi-instagram"></i>
+         </div>
+    </div>
+    <p>or use your account</p>
+    <div class="d-flex">
+        <label for="email"></label>
+        <input type="Email" id="email" placeholder="Email">
+    </div>
+    <div class="d-flex">
+        <label for="password"></label>
+        <input type="password" placeholder="password">
+    </div>
+    <div class="fp">
+       <p>Forget Your password</p>
+    </div>
+    <div class="LOG">
+    <button>Log-In</button>
+    </div>
+    </form>
+<div class="color">
+    <h2>HTML CSS LOGIN FORM</h2>
+    <div class="pd">
+    <p>This login is created using pure HTML and CSS for social icons, FontAwesome is used. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a tempora repellendus dolores. Unde minus aspernatur quaerat officia fuga non, vel tempora similique quod possimus! Doloribus placeat rem aperiam distinctio?</p>
+    </div>
+</div>
+</body>
+</html>

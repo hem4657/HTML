@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --tran: all 0.4s linear;
+}
+body{
+    border: 2px solid red;
+    height: 100vh;
+    width: 100%;
+}
+header{
+    border: 2px solid black;
+    display: flex;
+    position: fixed;
+    background-image: url(project1.jpg);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: black;
+    box-shadow: 0 2px 3px gray;
+
+}
+.emag{
+    width: 20%!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.emag>img{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+.emag>p:hover{
+    color: yellowgreen;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+ul{
+    position: absolute;
+    top: 0;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(#4f4f4f)
+
+}
+li{
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(#4f4f4f, #ed02026c);
+    border-radius: 8px;
+    transition: 0.5s;
+    color: white;
+}
+ul li:nth-child(1):hover~span{
+   left: 0;
+}ul li:nth-child(2):hover~span{
+    left: 15%;
+ }
+ul li:nth-child(3):hover~span{
+    left: 35%;
+ }
+ul li:nth-child(4):hover~span{
+    left: 55%;
+ }
+ul li:nth-child(5):hover~span{
+    left: 75%;
+ }
+ li:hover{
+    color: yellow;
+ }
+.icon{
+    display: flex;
+    width: 20%;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    color: white;
+}
+.icon input{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 400px;
+    border: none;
+    padding: 0.3rem;
+    border-radius:5px;
+    display: none;
+    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.623);
+    transition: 0.5s;
+    outline: none;
+}
+@keyframes slide-left{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(80px);
+    }
+}
+.box{
+    border: 2px solid green;
+    height: 90%;
+    margin-top: 60px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.box>.box1>.itms{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.box .box1 .itms img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .box1 .itms .content{
+    position: absolute;
+   top: 20%;
+   width: 300px;
+   max-width: 50%;
+   left: 20%;
+   transform: translateX(-50%);
+   padding-right: 10px;
+   box-sizing: border-box;
+   color: white;
+   text-shadow: 0 5px 10px #0004;
+}
+.box .box1 .itms .content .outher,
+.box .box1 .itms .content .des{
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.box .box1 .itms .content .title,
+.box .box1 .itms .content .text{
+    font-weight: bold;
+    font-size: 3em;
+    list-style: 1.3em;
+}
+.box .box1 .itms .content .text{
+    color: #f1683a;
+}
+.box .box1 .itms .content .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 10px;
+    margin-top: 20px;
+}
+.box .box1 .itms .content button{
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: poopins;
+    font-weight: 500;
+}
+.box .box1 .itms .content button:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+}
+/* thumbnail */
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.thumbnail .itm{
+    width: 150px;
+    height: 200px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thumbnail .itm img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail .itm .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #eee;
+}
+.thumbnail .itm .content .title{
+    font-weight: bold;
+}
+/* arrows */
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 800px;
+    width: 30%;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(22, 21, 21, 0.533);
+    border: none;
+    color: #eee;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 100;
+}
+.arrows button:hover{
+    background-color: #eee;
+    color: black;
+}
+.box .box1 .itms:nth-child(1){
+    z-index: 1;
+}
+.box .box1 .itms:nth-child(1) .outher,
+.box .box1 .itms:nth-child(1) .title,
+.box .box1 .itms:nth-child(1) .text,
+.box .box1 .itms:nth-child(1) .des,
+.box .box1 .itms:nth-child(1) .buttons{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showcontent 0.5s 1s linear 1 forwards;
+}
+@keyframes showcontent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.box .box1 .itms:nth-child(1) .title{
+    animation-delay: 1.2s;
+}
+.box .box1 .itms:nth-child(1) .text{
+    animation-delay: 1.4s;
+}
+.box .box1 .itms:nth-child(1) .des{
+    animation-delay: 1.6s;
+}
+.box .box1 .itms:nth-child(1) .buttons{
+    animation-delay: 1.8s;
+}
+.box .next .box1 .itms:nth-child(2) img{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+}

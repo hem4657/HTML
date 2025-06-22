@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    
+
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    
+}
+header>img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+header>.menu-bar>ul{
+    width: 700px;
+    height: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+header>.menu-bar>ul li{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+header>.menu-bar>ul li:hover{
+    background-color: green;
+    color: white;
+}
+header>.menu-bar1>ul{
+    width: 200px;
+    height: 100%;
+    margin-left: 400px;
+    list-style-type: none;
+}
+header>.menu-bar1>ul li{
+    padding:15px 10px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+header>.menu-bar1>ul li a{
+    color: black;
+}
+header>.menu-bar1>ul li a:hover{
+     background-color: rgb(185, 180, 180);
+     border-radius: 50%; 
+}
+nav{
+    display: flex;
+}
+nav>.nave-bar{
+    width: 100%;
+    border: 2px solid red;
+    height: 30px;
+}
+nav>.nave-bar>ul{
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+nav>.nave-bar>ul li{
+    border: 1px solid black;
+    background-color: rgb(84, 81, 81);
+    color: red;
+    width: 100%;
+    padding: 5px;
+    text-align: center;  
+}
+nav>.nave-bar>ul li:hover{
+    background-color:  rgb(221, 216, 216);
+    color: black;
+}
+.bi-facebook{
+    background-color: blue;
+    color: white;
+}
+.bi-instagram{
+    background-color: rgb(244, 25, 98);
+    color: white;
+}
+.bi-whatsapp{
+    background-color: green;
+    color: white;
+}
+.bi-snapchat{
+    color: white;
+}
+.bi-twitter-x{
+    background-color: black;
+    color: white;
+}
